@@ -23,12 +23,13 @@ class ViewController: UIViewController {
     func addButton() {
         let button = UIButton()
         button.setTitle("Fetch Updated Data", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.white, for: .normal)
         self.view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor), button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)])
         
         button.addTarget(self, action: #selector(handleSelection), for: .touchUpInside)
+        self.view.addSubview(button)
     }
     
     func bindViewModel() {

@@ -27,7 +27,7 @@ class Bindable<T> {
      */
     init(_ value: T) {
         self.value = value
-        didSetValue(self.value)
+//        didSetValue(self.value)
     }
     
     /**
@@ -37,6 +37,6 @@ class Bindable<T> {
      */
     func bind(completion: @escaping (T?) -> ()) {
         didSetValue = completion
-        didSetValue(self.value)
+//        didSetValue(self.value)
     }
 }
